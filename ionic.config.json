@@ -1,0 +1,7 @@
+{
+  "name": "tabata",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

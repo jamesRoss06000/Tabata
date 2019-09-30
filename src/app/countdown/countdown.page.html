@@ -1,0 +1,61 @@
+<script src="https://kit.fontawesome.com/8965a0620e.js"></script>
+
+<body>
+
+
+  <ion-header>
+    <ion-toolbar color="medium">
+      <ion-title style="text-align: center">
+        JR Coaching Apps
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="dark">
+
+    <ion-card id="startBtn" color="tertiary" (click)="awake()" class="green">
+      <ion-card-content id="start">
+        Start Countdown
+      </ion-card-content>
+    </ion-card>
+
+    <div>
+      <ion-card color="medium">
+        <ion-card-content id="currentSet" [innerHTML]="this.currentSet">
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card color="success">
+        <ion-card-content class="green orange" id="counter" [innerHTML]="this.countdown">
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <ion-card color="medium">
+      <ion-card-content id="elapsedLabel">
+        Total Time Elapsed
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="medium">
+      <ion-card-content id="timeElapsed">
+        <span id="m"></span>
+        :
+        <span id="s"></span>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="success" (click)="pausePlay()">
+      <ion-card-content id="pause">
+        pause / play
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="danger" (click)="previousPage()">
+      <ion-card-content id="quit">
+        Previous Page
+      </ion-card-content>
+    </ion-card>
+
+  </ion-content>
+</body>

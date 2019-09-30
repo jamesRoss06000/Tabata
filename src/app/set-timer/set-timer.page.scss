@@ -1,0 +1,33 @@
+*{
+    color: black;
+    font-weight: 550;
+}
+
+ion-content {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    background-color: #e27b1b;
+    color: black;
+    border: none;
+  }
+
+.timeBtns{
+    padding: 20px 0 0 0;
+    height: 65px;
+}
+
+#backBtn{
+    height: 65px;
+    padding: 23px 0 0 0;
+    font-size: 16px;
+}
+
+#rest, #total {
+    font-size: 16px;
+    padding-right: 0;
+}

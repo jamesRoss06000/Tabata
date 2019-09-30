@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title style="text-align: center">
+        JR Coaching Apps
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <p class="ion-padding">Tabata: High-Intensity Interval Training over 8 sets. Select level:</p>
+  <ion-card color="tertiary" id="classic" (click)="chooseTabata(0)">
+    <ion-card-header>
+      <ion-card-title>Classic Tabata</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Performed to a work to rest ratio of 2:1, proven formula for improving fitness
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="warning" (click)="chooseTabata(1)">
+    <ion-card-header>
+      <ion-card-title>Advanced Tabata</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Classic Tabata taken to the next level! Work to rest ratio of 3:1
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="success" id="serious" (click)="chooseTabata(2)">
+    <ion-card-header>
+      <ion-card-title>Serious Tabata</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Serious Tabata uses a work to rest ratio of 4:1 - Not for the faint of heart!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="danger" id="extreme" (click)="chooseTabata(3)">
+    <ion-card-header>
+      <ion-card-title>Extreme Tabata</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Extreme Tabata for the elites ! A devastating work to rest ratio of 5:1
+    </ion-card-content>
+  </ion-card>
+</ion-content>

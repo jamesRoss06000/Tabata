@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title style="text-align: center">
+      JR Coaching Apps
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <p class="ion-padding">Select time in green boxes. Orange to start!</p>
+  <form (submit)="startTabata($event)">
+    <ion-card color="tertiary">
+      <ion-card-content class="grn">
+        <ion-item>
+          <ion-label>Countdown (Seconds)</ion-label>
+          <ion-datetime id="countdown" display-format="ss">
+          </ion-datetime>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="tertiary">
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Work Times</ion-label>
+          <ion-datetime id="tabata" display-format="ss"(ionChange)="showRest($event)">
+          </ion-datetime>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="medium">
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Rest Times</ion-label>
+          <ion-card-content id="rest"></ion-card-content>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="medium">
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Total Workout</ion-label>
+          <ion-card-content id="total"></ion-card-content>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item color="success"><input type="submit" value="Begin Workout!"></ion-item>
+    </ion-card>
+
+    <ion-card color="danger" (click)="backPage()">
+      <ion-card-content id="backBtn">
+        Return to Main Menu
+      </ion-card-content>
+    </ion-card>
+
+
+  </form>
+
+</ion-content>
