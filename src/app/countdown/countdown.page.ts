@@ -40,14 +40,6 @@ export class CountdownPage implements OnInit {
     constructor(private Auth: AuthService, public http: HttpClient, private router: Router, private route: ActivatedRoute) {
     }
 
-    // awake() {
-    //     this.insomnia.keepAwake()
-    //         .then(
-    //             () => console.log('success'),
-    //             () => console.log('error')
-    //         );
-    // }
-
     repeat() {
         this.startBtn.classList.remove('green');
         this.startBtn.classList.add('grey');
@@ -89,7 +81,6 @@ export class CountdownPage implements OnInit {
                 this.intervalThree = setInterval(() => this.rest(this.displayDiv, this.restTime, this.set), 1000)
             } else {
                 alert("Good work!");
-                // this.insomnia.allowSleepAgain();
             }
         }
     }
