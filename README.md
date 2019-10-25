@@ -3,3 +3,5 @@ App that acts as timer for HIIT (High Intensity Interval Training). Will attempt
 Ionic 4
 AngularJS
 Javascript
+
+Updating app to be shown on github pages...
