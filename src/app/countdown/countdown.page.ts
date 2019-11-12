@@ -43,7 +43,7 @@ export class CountdownPage implements OnInit {
     repeat() {
         this.startBtn.classList.remove('green');
         this.startBtn.classList.add('grey');
-        this.startBtn.innerHTML = "Prepare/Rest on orange, Workout on green";
+        this.startBtn.innerText = "Orange: Rest. Green: GO!!";
         this.intervalOne = setInterval(() => this.begin(this.countdown, this.tabata, this.displayDiv), 1000);
         this.intervalFour = setInterval(() => this.totalTime(this.secs, this.restSecs), 1000);
     }

@@ -5,8 +5,15 @@
 }
 
 #counter, #timeElapsed{
+    height: 300px;
+    padding-top: 80px;
     font-family: Orbitron;
-    font-size: 50px;
+    font-size: 100px;
+}
+
+#startBtn {
+    height: 62px;
+    font-size: 12px;
 }
 
 .green{
@@ -22,5 +29,6 @@
     padding-top: 17px;
     background-color: #979192;
     min-height: 47px;
+    font-size: 12px;
     // color: #F4F4F4;
 }
